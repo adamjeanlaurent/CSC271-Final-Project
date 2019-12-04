@@ -1,5 +1,7 @@
 let mult = 2;
 let startArray = [9, 4, 2, 7, 3, 10, 1, 0, 8, 6, 5];
+let startButton = document.querySelector('#startButton');
+let randomizeButton = document.querySelector('#randomizeButton');
 
 function animatedBubbleSort(inputArr) {
     let len = inputArr.length;
@@ -12,15 +14,16 @@ function animatedBubbleSort(inputArr) {
                 updateFastPointer(nextElement);
                 if(i == len - 1 && j == len - 1) {
                     clearAllPointers();
+                    mult = 2;
                 }
-            }, mult++ * 300);
+            }, mult++ * 200);
 
             if (inputArr[j] > inputArr[j + 1]) {
                 let currentElement = inputArr[j];
                 let nextElement = inputArr[j + 1];
                 setTimeout(() => {
                     swap(currentElement, nextElement);
-                }, mult++ * 300);
+                }, mult++ * 200);
                 let tmp = inputArr[j];
                 inputArr[j] = inputArr[j + 1];
                 inputArr[j + 1] = tmp;
@@ -62,16 +65,29 @@ function swap(i, j) {
     secondElement.classList.add('n' + i);
 }
 
-function shuffleArray(startArray) {
+function shuffleArray() {
+    let numbersUsed = new Set();
     startArray = [];
     for (let i = 0; i <= 10; i++) {
-        startArray.push(genRandNum());
+        let randNum = genRandNum();
+        if(numbersUsed.has(randNum)) {
+            while(numbersUsed.has(randNum)) {
+                randNum = genRandNum();
+            }
+        }
+        numbersUsed.add(randNum);
+        startArray.push(randNum);
     }
-    // assign class values, repeated elements shouldn't be as issue ?
+    let verticalLines = document.querySelectorAll('.vl');
+    for(let i = 0; i <= 10; i++){
+        verticalLines[i].className = '';
+        verticalLines[i].classList.add('vl');
+        verticalLines[i].classList.add('n' + startArray[i]);
+    }
 }
 
 function genRandNum() {
-    return Math.floor(Math.random() * 10) + 1;
+    return Math.floor(Math.random() * 11);
 }
 
 function clearAllPointers() {
@@ -85,5 +101,12 @@ function clearAllPointers() {
         fastPointer.classList.remove('slowPointer');
     }
 }
-animatedBubbleSort(startArray);
-console.log(startArray);
+
+startButton.addEventListener('click', () => {
+    animatedBubbleSort(startArray);
+});
+
+randomizeButton.addEventListener('click', () => {
+    shuffleArray();
+});
+
