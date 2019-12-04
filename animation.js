@@ -109,4 +109,3 @@ startButton.addEventListener('click', () => {
 randomizeButton.addEventListener('click', () => {
     shuffleArray();
 });
-

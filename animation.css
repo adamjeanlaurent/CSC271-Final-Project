@@ -28,6 +28,10 @@
     background-color: green !important;
 }
 
+.centerText {
+    text-align: center;
+}
+
 .n0 {
     height: 10%;
 }
