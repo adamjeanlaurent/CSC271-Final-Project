@@ -1,5 +1,5 @@
 .vl {
-    width: 20px;
+    width: 3%;
     display: inline-block;
     margin: 0 8px;
     background-color: lightblue;
@@ -7,8 +7,9 @@
 
 #array-container {
     position: absolute;
-    left: 400px;
-    top: 100px;
+    min-width: 350px;
+    width: 40%;
+  
 }
 
 .slowPointer {
