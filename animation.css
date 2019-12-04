@@ -1,0 +1,101 @@
+.vl {
+    width: 20px;
+    display: inline-block;
+    margin: 0 8px;
+    background-color: lightblue;
+}
+
+#array-container {
+    position: absolute;
+    left: 400px;
+    top: 100px;
+}
+
+.slowPointer {
+    background-color: red !important;
+}
+
+.fastPointer{
+    background-color: green !important;
+}
+
+.n0 {
+    height: 50px;
+}
+
+
+.n1 {
+    height: 100px;
+}
+
+.n2 {
+    height: 150px;
+}
+
+.n3 {
+    height: 200px;
+}
+
+.n4 {
+    height: 250px;
+}
+
+.n5 {
+    height: 300px;
+}
+
+.n6 {
+    height: 350px;
+}
+
+.n7 {
+    height: 400px;
+}
+
+.n8 {
+    height: 450px;
+}
+
+.n9 {
+    height: 500px;
+}
+
+.n10 {
+    height: 550px;
+}
+
+.n0::before {
+    content: "0";
+}
+.n1::before {
+    content: "1";
+}
+.n2::before {
+    content: "2";
+}
+.n3::before {
+    content: "3";
+}
+.n4::before {
+    content: "4";
+}
+.n5::before {
+    content: "5";
+}
+.n6::before {
+    content: "6";
+}
+.n7::before {
+    content: "7";
+}
+.n8::before {
+    content: "8";
+}
+
+.n9::before {
+    content: "9";
+}
+
+.n10::before {
+    content: "10";
+}
