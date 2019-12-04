@@ -7,9 +7,17 @@
 
 #array-container {
     position: absolute;
-    min-width: 350px;
+    left: 35%;
+    top: 30%;
+    min-width: 330px;
     width: 40%;
-    
+    height: 40%;
+}
+
+.buttonBar {
+    position: absolute;
+    left: 40%;
+    top: 60%;
 }
 
 .slowPointer {
@@ -21,48 +29,48 @@
 }
 
 .n0 {
-    height: 50px;
+    height: 10%;
 }
 
 
 .n1 {
-    height: 100px;
+    height: 15%;
 }
 
 .n2 {
-    height: 150px;
+    height: 20%;
 }
 
 .n3 {
-    height: 200px;
+    height: 25%;
 }
 
 .n4 {
-    height: 250px;
+    height: 30%;
 }
 
 .n5 {
-    height: 300px;
+    height: 35%;
 }
 
 .n6 {
-    height: 350px;
+    height: 40%;
 }
 
 .n7 {
-    height: 400px;
+    height: 45%;
 }
 
 .n8 {
-    height: 450px;
+    height: 50%;
 }
 
 .n9 {
-    height: 500px;
+    height: 55%;
 }
 
 .n10 {
-    height: 550px;
+    height: 60%;
 }
 
 .n0::before {
