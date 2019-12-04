@@ -4,20 +4,19 @@ let bubbleSort = (inputArr) => {
     let len = inputArr.length;
     for (let i = 0; i < len; i++) {
         for (let j = 0; j < len; j++) {
-            let x = inputArr[j];
-            let y = inputArr[j - 1];
-            let z = inputArr[j + 1];
+            let currentElement = inputArr[j];
+            let previousElement = inputArr[j - 1];
+            let nextElement = inputArr[j + 1];
             // setTimeout(() => {
-            //     updateSlowPointer(x, y);
-            //     updateFastPointer(z);
+            //     updateSlowPointer(currentElement, previousElement);
+            //     updateFastPointer(nextElement);
             // }, mult++ * 1000); 
            
             if (inputArr[j] > inputArr[j + 1]) {
-                let x = inputArr[j];
-                let y = inputArr[j + 1];
+                let currentElement = inputArr[j];
+                let nextElement = inputArr[j + 1];
                 setTimeout(() => {
-                    console.log(inputArr[j] , inputArr[j + 1]);
-                    swap(x, y);
+                    swap(currentElement, nextElement);
                 }, mult++ * 300);
                
                 let tmp = inputArr[j];
@@ -31,7 +30,6 @@ let bubbleSort = (inputArr) => {
 
 function updateSlowPointer(index, prev) {
     if(index == undefined) {
-      console.log(index);
     }
     let currentElement = document.querySelector('.n' + index);
     if (prev) {
