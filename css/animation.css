@@ -1,22 +1,34 @@
 .vl {
-    width: 3%;
+    width: 5%;
     display: inline-block;
-    margin: 0 8px;
+    margin: 0 1%;
     background-color: lightblue;
+}
+
+body {
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.sliderBarAndTextField {
+    margin-top: 10%;
+}
+
+#slider {
+    width: 35%;
 }
 
 #array-container {
     position: absolute;
-    left: 35%;
+    left: 39%;
     top: 30%;
-    min-width: 330px;
-    width: 40%;
+    min-width: 250px;
+    width: 25%;
     height: 40%;
 }
 
 .buttonBar {
     position: absolute;
-    left: 40%;
+    left: 39%;
     top: 60%;
 }
 
@@ -30,6 +42,7 @@
 
 .centerText {
     text-align: center;
+    font-size: 4vw;
 }
 
 .n0 {
@@ -112,3 +125,12 @@
 .n10::before {
     content: "10";
 }
+
+@media only screen and (max-width: 600px) {
+    #array-container {
+        left: 30%;
+    }
+    .buttonBar {
+        left: 28%;
+    }
+  }
