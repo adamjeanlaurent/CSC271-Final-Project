@@ -2,3 +2,19 @@
     width: 90%;
     height: 90%;
 }
+
+.centerText {
+    text-align: center;
+}
+
+.titleBox {
+    margin-top: 3%;
+}
+
+.title {
+    margin-top: 1%;
+}
+
+body {
+    font-family: 'Baloo Bhai', cursive;
+}
