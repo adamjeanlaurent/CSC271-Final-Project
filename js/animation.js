@@ -10,9 +10,8 @@ let choiceOfSpeed = 1;
     TODO 
     add new font to all pages
     make gif sizes smaller
-    style title text on index
-    add speed controls to animations page
     form validation 
+    accessibility
 */
 
 function animatedBubbleSort(inputArr) {
@@ -29,14 +28,14 @@ function animatedBubbleSort(inputArr) {
                     mult = 2;
                     showPlayer();
                 }
-            }, choiceOfSpeed * (mult++ * 200));
+            }, choiceOfSpeed * (mult++ * 100));
 
             if (inputArr[j] > inputArr[j + 1]) {
                 let currentElement = inputArr[j];
                 let nextElement = inputArr[j + 1];
                 setTimeout(() => {
                     swap(currentElement, nextElement);
-                }, choiceOfSpeed * (mult++ * 200));
+                }, choiceOfSpeed * (mult++ * 100));
                 let tmp = inputArr[j];
                 inputArr[j] = inputArr[j + 1];
                 inputArr[j + 1] = tmp;
@@ -125,25 +124,18 @@ randomizeButton.addEventListener('click', () => {
 });
 
 slider.addEventListener('click', () => {
-    speed.textContent = slider.value + 'x';
+    speed.textContent = slider.value + 'x speed';
     let requestedValue = parseInt(slider.value);
-    if (requestedValue == 1) {
-        choiceOfSpeed = 1;
-    } else if (requestedValue == 2) {
-        choiceOfSpeed = 0.80;
-    } else if (requestedValue == 3) {
-        choiceOfSpeed = 0.60;
-    } else if (requestedValue == 4) {
-        choiceOfSpeed = 0.40;
-    } else if (requestedValue == 5) {
-        choiceOfSpeed = 0.20;
-    }
-
+    updateSpeed(requestedValue);
 });
 
 slider.addEventListener('keydown', () => {
-    speed.textContent = slider.value + 'x';
+    speed.textContent = slider.value + 'x speed';
     let requestedValue = parseInt(slider.value);
+    updateSpeed(requestedValue);
+});
+
+function updateSpeed(requestedValue) {
     if (requestedValue == 1) {
         choiceOfSpeed = 1;
     } else if (requestedValue == 2) {
@@ -155,7 +147,7 @@ slider.addEventListener('keydown', () => {
     } else if (requestedValue == 5) {
         choiceOfSpeed = 0.20;
     }
-});
+}
 
 function hidePlayer() {
     startButton.style.display = 'none';
