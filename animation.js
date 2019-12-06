@@ -27,6 +27,7 @@ function animatedBubbleSort(inputArr) {
                 if (i == len - 1 && j == len - 1) {
                     clearAllPointers();
                     mult = 2;
+                    showPlayer();
                 }
             }, choiceOfSpeed * (mult++ * 200));
 
@@ -116,6 +117,7 @@ function clearAllPointers() {
 
 startButton.addEventListener('click', () => {
     animatedBubbleSort(startArray);
+    hidePlayer();
 });
 
 randomizeButton.addEventListener('click', () => {
@@ -154,6 +156,20 @@ slider.addEventListener('keydown', () => {
         choiceOfSpeed = 0.20;
     }
 });
+
+function hidePlayer() {
+    startButton.style.display = 'none';
+    randomizeButton.style.display = 'none';
+    slider.style.display = 'none';
+    speed.style.display = 'none';
+}
+
+function showPlayer() {
+    startButton.style.display = 'inline-block';
+    randomizeButton.style.display = 'inline-block';
+    slider.style.display = 'inline-block';
+    speed.style.display = 'inline-block';
+}
 
 slider.value = 1;
 slider.click();
