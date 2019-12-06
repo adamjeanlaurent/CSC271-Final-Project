@@ -2,6 +2,18 @@ let mult = 2;
 let startArray = [9, 4, 2, 7, 3, 10, 1, 0, 8, 6, 5];
 let startButton = document.querySelector('#startButton');
 let randomizeButton = document.querySelector('#randomizeButton');
+let slider = document.querySelector('#slider');
+let speed = document.querySelector('#speed');
+let choiceOfSpeed = 1;
+
+/*
+    TODO 
+    add new font to all pages
+    make gif sizes smaller
+    style title text on index
+    add speed controls to animations page
+    form validation 
+*/
 
 function animatedBubbleSort(inputArr) {
     let len = inputArr.length;
@@ -12,18 +24,18 @@ function animatedBubbleSort(inputArr) {
             setTimeout(() => {
                 updateSlowPointer(currentElement);
                 updateFastPointer(nextElement);
-                if(i == len - 1 && j == len - 1) {
+                if (i == len - 1 && j == len - 1) {
                     clearAllPointers();
                     mult = 2;
                 }
-            }, mult++ * 200);
+            }, choiceOfSpeed * (mult++ * 200));
 
             if (inputArr[j] > inputArr[j + 1]) {
                 let currentElement = inputArr[j];
                 let nextElement = inputArr[j + 1];
                 setTimeout(() => {
                     swap(currentElement, nextElement);
-                }, mult++ * 200);
+                }, choiceOfSpeed * (mult++ * 200));
                 let tmp = inputArr[j];
                 inputArr[j] = inputArr[j + 1];
                 inputArr[j + 1] = tmp;
@@ -70,8 +82,8 @@ function shuffleArray() {
     startArray = [];
     for (let i = 0; i <= 10; i++) {
         let randNum = genRandNum();
-        if(numbersUsed.has(randNum)) {
-            while(numbersUsed.has(randNum)) {
+        if (numbersUsed.has(randNum)) {
+            while (numbersUsed.has(randNum)) {
                 randNum = genRandNum();
             }
         }
@@ -79,7 +91,7 @@ function shuffleArray() {
         startArray.push(randNum);
     }
     let verticalLines = document.querySelectorAll('.vl');
-    for(let i = 0; i <= 10; i++){
+    for (let i = 0; i <= 10; i++) {
         verticalLines[i].className = '';
         verticalLines[i].classList.add('vl');
         verticalLines[i].classList.add('n' + startArray[i]);
@@ -109,3 +121,39 @@ startButton.addEventListener('click', () => {
 randomizeButton.addEventListener('click', () => {
     shuffleArray();
 });
+
+slider.addEventListener('click', () => {
+    speed.textContent = slider.value + 'x';
+    let requestedValue = parseInt(slider.value);
+    if (requestedValue == 1) {
+        choiceOfSpeed = 1;
+    } else if (requestedValue == 2) {
+        choiceOfSpeed = 0.80;
+    } else if (requestedValue == 3) {
+        choiceOfSpeed = 0.60;
+    } else if (requestedValue == 4) {
+        choiceOfSpeed = 0.40;
+    } else if (requestedValue == 5) {
+        choiceOfSpeed = 0.20;
+    }
+
+});
+
+slider.addEventListener('keydown', () => {
+    speed.textContent = slider.value + 'x';
+    let requestedValue = parseInt(slider.value);
+    if (requestedValue == 1) {
+        choiceOfSpeed = 1;
+    } else if (requestedValue == 2) {
+        choiceOfSpeed = 0.80;
+    } else if (requestedValue == 3) {
+        choiceOfSpeed = 0.60;
+    } else if (requestedValue == 4) {
+        choiceOfSpeed = 0.40;
+    } else if (requestedValue == 5) {
+        choiceOfSpeed = 0.20;
+    }
+});
+
+slider.value = 1;
+slider.click();
