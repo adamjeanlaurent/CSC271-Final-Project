@@ -14,7 +14,6 @@
         happen at the same time. 
 */
 
-
 let mult = 2;
 let startArray = [9, 4, 2, 7, 3, 10, 1, 0, 8, 6, 5];
 let startButton = document.querySelector('#startButton');
@@ -138,7 +137,7 @@ function shuffleArray() {
 function genRandNum() {
     return Math.floor(Math.random() * 11);
 }
-
+3
 /*
     removes all 'slow' and 'fast' pointers from the array container
 */
