@@ -80,24 +80,26 @@
       </div>
       <div>
         <h2><a name="Python"> Python</a> </h2>
-        <p> # Python program for implementation of Bubble Sort<br>
+        <p> # Python program for implementation of Bubble Sort<br><br>
             def bubbleSort(arr):<br>
-            &nbsp &nbsp &nbsp &nbsp  n = len(arr)<br> 
+            &nbsp &nbsp &nbsp &nbsp  n = len(arr)<br><br>  
+           
             &nbsp &nbsp &nbsp &nbsp  # Traverse through all array elements<br>
-            &nbsp &nbsp &nbsp &nbsp  for i in range(n):<br>
+            &nbsp &nbsp &nbsp &nbsp  for i in range(n):<br><br>
             &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  # Last i elements are already in place<br> 
-            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  for j in range(0, n-i-1):<br> 
-  
-            # traverse the array from 0 to n-i-1<br> 
-            # Swap if the element found is greater<br> 
-            # than the next element<br> 
-            if arr[j] > arr[j+1] : <br>
-            &nbsp &nbsp &nbsp &nbsp  arr[j], arr[j+1] = arr[j+1], arr[j] <br>
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  for j in range(0, n-i-1):<br><br> 
+            
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp # traverse the array from 0 to n-i-1<br> 
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp # Swap if the element found is greater<br> 
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp # than the next element<br> 
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp if arr[j] > arr[j+1] : <br>
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  arr[j], arr[j+1] = arr[j+1], arr[j] <br>
   
             # Driver code to test above <br>
             arr = [64, 34, 25, 12, 22, 11, 90] <br>
 
-            bubbleSort(arr) <br>
+            bubbleSort(arr) <br><br>
 
             print ("Sorted array is:") <br>
             for i in range(len(arr)):  <br>
