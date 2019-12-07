@@ -8,8 +8,8 @@ let choiceOfSpeed = 1;
 
 /*
     TODO 
+    give licesnse for images 
     add new font to all pages
-    make gif sizes smaller
     form validation 
     accessibility
 */

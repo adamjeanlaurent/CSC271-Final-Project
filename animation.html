@@ -9,37 +9,39 @@
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/animation.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md bg-success navbar-dark">
-  		<!-- Brand -->
-  		<a class="navbar-brand" href="index.html">Bubble Sort</a>
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">Bubble Sort</a>
 
-  		<!-- Toggler/collapsibe Button -->
- 		 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    			<span class="navbar-toggler-icon"></span>
-  		</button>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-  		<!-- Navbar links -->
-  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
-    			<ul class="navbar-nav">
-      				<li class="nav-item">
-        				<a class="nav-link" href="index.html">Home</a>
-      				</li>
-      				<li class="nav-item">
-        				<a class="nav-link" href="codePage.html">Code Page</a>
-      				</li>
-      				<li class="nav-item">
-      	  				<a class="nav-link" href="animation.html">Animation</a>
-      				</li>
-    			</ul>
-  		</div>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="codePage.html">Code Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="animation.html">Animation</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    
-    <h1 class = "centerText">Bubblesort Vizualized!</h1>
-    <div id="array-container">
+
+    <h1 class="centerText">Bubblesort Vizualized!</h1>
+    <div id="array-container" aria-label="This is an animation of the bubble sort algorithm, 
+    it displays two pointers walking through an array of 10 elements portrayed as vertical bars, 
+    and sorts them in order according to their values using the bubble sort algorithm" tabindex="0">
         <div class="vl n9"></div>
         <div class="vl n4"></div>
         <div class="vl n2"></div>
@@ -53,13 +55,28 @@
         <div class="vl n5"></div>
     </div>
 
-    <div class = "buttonBar">
-        <button id = "startButton" type="button" class="btn btn-warning">Start</button>
-        <button id = "randomizeButton" type="button" class="btn btn-warning">Randomize Array</button>
+    <div class="buttonBar">
+        <button id="startButton" type="button" class="btn btn-warning">Start</button>
+        <button id="randomizeButton" type="button" class="btn btn-warning">Randomize Array</button>
         <br>
-        <input type="range" min="1" max="5" value="" id="slider" class = "sliderBarAndTextField">
-        <span id = "speed" class = "sliderBarAndTextField"></span>
+        <input type="range" min="1" max="5" value="" id="slider" class="sliderBarAndTextField">
+        <span id="speed" class="sliderBarAndTextField"></span>
     </div>
+
+    <div id="accessibilityInstructions" tabindex="0">
+        Press tab to move forward and shift-tab to move backward. To change the speed, tab to the speed bar
+        and use the arrow keys to select your specified speed and press enter to change it!
+    </div>
+
+    <footer class="page-footer font-small bg-success" id = "animationFooter">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Adam Jean-Laurent & Michael Jackson
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -70,6 +87,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-        <script src = "js/animation.js"></script>
+    <script src="js/animation.js"></script>
 </body>
+
 </html>
