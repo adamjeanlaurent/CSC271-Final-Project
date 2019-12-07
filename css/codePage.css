@@ -1,12 +1,19 @@
-
- span {
+/* span {
        display: inline-block;
        width: 1000px;
        height: 1000px;
        margin: 60px;
        background-color: #9eeca7;
-     }
+     } */
+
+.rounded-circle {
+  display: inline-block;
+  width: 1000px;
+  height: 1000px;
+  margin: 60px;
+  background-color: #9eeca7;
+}
 
 body {
-        font-family: 'Baloo Bhai', 'Times New Roman', Times, serif;
-    }
+  font-family: 'Baloo Bhai', 'Times New Roman', Times, serif;
+}
