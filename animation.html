@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- This is the animation page -->
 
 <head>
     <meta charset="UTF-8">
@@ -13,6 +14,7 @@
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-md bg-success navbar-dark">
         <!-- Brand -->
         <a class="navbar-brand" href="index.html">Bubble Sort</a>
@@ -37,8 +39,9 @@
             </ul>
         </div>
     </nav>
-
+    <!-- Title -->
     <h1 class="centerText">Bubblesort Vizualized!</h1>
+    <!-- Array Container where animation takes place -->
     <div id="array-container" aria-label="This is an animation of the bubble sort algorithm, 
     it displays two pointers walking through an array of 10 elements portrayed as vertical bars, 
     and sorts them in order according to their values using the bubble sort algorithm" tabindex="0">
@@ -54,29 +57,31 @@
         <div class="vl n6"></div>
         <div class="vl n5"></div>
     </div>
-
+    <!-- Animation Controls -->
     <div class="buttonBar">
-        <button id="startButton" type="button" class="btn btn-warning">Start</button>
-        <button id="randomizeButton" type="button" class="btn btn-warning">Randomize Array</button>
+        <button id="startButton" type="button" class="btn btn-warning"
+            aria-label="This button starts the bubble sort animation">Start</button>
+        <button id="randomizeButton" type="button" class="btn btn-warning"
+            aria-label="This button randomizes the on screen array with 11 values of 0 through 10">Randomize
+            Array</button>
         <br>
-        <input type="range" min="1" max="5" value="" id="slider" class="sliderBarAndTextField">
+        <input type="range" min="1" max="5" value="" id="slider" class="sliderBarAndTextField"
+            aria-label="This is a range slider that when moved, changes the speed of the bubble sort animation, the speed go through 1 times to 5 times.">
         <span id="speed" class="sliderBarAndTextField"></span>
     </div>
-
+    <!-- Accessibility Instructions -->
     <div id="accessibilityInstructions" tabindex="0">
-        Press tab to move forward and shift-tab to move backward. To change the speed, tab to the speed bar
+        How To Use Without A Mouse: To change the speed, tab to the speed bar
         and use the arrow keys to select your specified speed and press enter to change it!
     </div>
-
-    <footer class="page-footer font-small bg-success text-white" id = "animationFooter">
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3"><span tabindex="0">© 2019 Adam Jean-Laurent & Michael Jackson</span>
-        </div>
-        <!-- Copyright -->
-
-    </footer>
     <!-- Footer -->
+    <footer class="page-footer font-small bg-success text-white" id="animationFooter">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3"><span tabindex="0">© 2019 Adam Jean-Laurent & Michael
+                Jackson</span>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
