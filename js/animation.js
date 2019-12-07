@@ -8,6 +8,8 @@ let choiceOfSpeed = 1;
 
 /*
     TODO 
+    give licesnse for images 
+    add disclaimer instructions for animation page 
     add new font to all pages
     make gif sizes smaller
     form validation 

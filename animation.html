@@ -39,7 +39,9 @@
     </nav>
     
     <h1 class = "centerText">Bubblesort Vizualized!</h1>
-    <div id="array-container">
+    <div id="array-container" aria-label="This is an animation of the bubble sort algorithm, 
+    it displays two pointers walking through an array of 10 elements portrayed as vertical bars, 
+    and sorts them in order according to their values using the bubble sort algorithm" tabindex="0">
         <div class="vl n9"></div>
         <div class="vl n4"></div>
         <div class="vl n2"></div>
@@ -59,6 +61,12 @@
         <br>
         <input type="range" min="1" max="5" value="" id="slider" class = "sliderBarAndTextField">
         <span id = "speed" class = "sliderBarAndTextField"></span>
+    </div>
+
+    <div id = "accessibilityInstructions" tabindex="0">
+        In order to control the animation player without the use of a mouse, 
+        Press tab to move forward and shift-tab to move backward. To change the speed, tab to the speed bar 
+        and use the arrow keys to select your specified speed and press enter to change it!
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
