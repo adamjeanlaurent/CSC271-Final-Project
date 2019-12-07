@@ -108,51 +108,7 @@
       </div>
       <div>
         <h2><a name="Java"> Java </a></h2>
-         <p>
-            // Java program for implementation of Bubble Sort <br>
-            class BubbleSort <br>
-            { <br>
-            &nbsp &nbsp &nbsp &nbsp
-                void bubbleSort(int arr[]) <br>
-                { <br>
-                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                    int n = arr.length; <br>
-                    for (int i = 0; i < n-1; i++) <br>
-                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                        for (int j = 0; j < n-i-1; j++) <br>
-                            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                            &nbsp &nbsp &nbsp &nbsp
-                            if (arr[j] > arr[j+1]) <br>
-                            { <br>
-                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                                // swap arr[j+1] and arr[i] <br> 
-                                int temp = arr[j]; <br>
-                                arr[j] = arr[j+1]; <br>
-                                arr[j+1] = temp; <br>
-                            } <br>
-                } <br><br>
-
-                /* Prints the array */ <br>
-                void printArray(int arr[]) <br>
-                { 
-                    int n = arr.length; <br>
-                    for (int i=0; i<n; ++i) <br>
-                        System.out.print(arr[i] + " "); <br>
-                    System.out.println(); <br>
-                } <br><br>
-
-                // Driver method to test above <br>
-                public static void main(String args[])  <br>
-                { <br>
-                    BubbleSort ob = new BubbleSort(); <br>
-                    int arr[] = {64, 34, 25, 12, 22, 11, 90}; <br>
-                    ob.bubbleSort(arr); <br>
-                    System.out.println("Sorted array"); <br>
-                    ob.printArray(arr); <br>
-                } <br>
-            } <br>
-         </p>
+         <script src="https://gist.github.com/mjackson-1/4edbfbe34d51e516019842113107740f.js"></script>
       </div>
       <div>
         <h2><a name="C"> C</a></h2>
