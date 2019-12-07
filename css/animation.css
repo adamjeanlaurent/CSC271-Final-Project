@@ -13,6 +13,11 @@ body {
     margin-top: 10%;
 }
 
+#animationFooter {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
 #accessibilityInstructions {
     position: absolute;
     width: 20%;
@@ -20,6 +25,7 @@ body {
     top: 72%;
     min-width: 200px;
     border: 2px solid #ffc107;
+    min-width: 290px;
 }
 
 #slider {
@@ -141,5 +147,8 @@ body {
     }
     .buttonBar {
         left: 28%;
+    }
+    #accessibilityInstructions {
+        font-size: 12px;
     }
   }
