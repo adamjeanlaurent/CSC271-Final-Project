@@ -82,9 +82,26 @@
         <h2><a name="Python"> Python</a> </h2>
         <p> # Python program for implementation of Bubble Sort<br>
             def bubbleSort(arr):<br>
-            &nbsp  n = len(arr)<br> 
-            &nbsp  # Traverse through all array elements<br>
-            &nbsp   for i in range(n):<br>
+            &nbsp &nbsp  n = len(arr)<br> 
+            &nbsp &nbsp  # Traverse through all array elements<br>
+            &nbsp &nbsp   for i in range(n):<br>
+            &nbsp &nbsp &nbsp  &nbsp   # Last i elements are already in place<br> 
+            &nbsp &nbsp &nbsp  &nbsp   for j in range(0, n-i-1):<br> 
+  
+            # traverse the array from 0 to n-i-1<br> 
+            # Swap if the element found is greater<br> 
+            # than the next element<br> 
+            if arr[j] > arr[j+1] : <br>
+            &nbsp &nbsp    arr[j], arr[j+1] = arr[j+1], arr[j] <br>
+  
+            # Driver code to test above <br>
+            arr = [64, 34, 25, 12, 22, 11, 90] <br>
+
+            bubbleSort(arr) <br>
+
+            print ("Sorted array is:") <br>
+            for i in range(len(arr)):  <br>
+            &nbsp &nbsp    print ("%d" %arr[i]), end=" ")  <br>
         </p>
       </div>
       <div>
