@@ -1,0 +1,12 @@
+index.html:
+    Dancing Sorting Algorithm GIFs:
+        Created at Sapientia University, Tirgu Mures (Marosvásárhely), Romania. 
+        Directed by Kátai Zoltán and Tóth László. 
+        In cooperation with "Maros Művészegyüttes", Tirgu Mures (Marosvásárhely), Romania. 
+        Choreographer: Füzesi Albert. 
+        Video: Lőrinc Lajos, Körmöcki Zoltán. 
+        Supported by "Szülőföld Alap", MITIS (NGO) and evoline company.
+        Sources: [ 
+            https://www.i-programmer.info/programming/theory/3531-sorting-algorithms-as-dances.html  , 
+            http://joyreactor.com/post/2293512
+        ]
