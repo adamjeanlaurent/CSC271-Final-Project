@@ -24,8 +24,6 @@ let choiceOfSpeed = 1;
 
 /*
     TODO 
-    add font to michael's page
-    give licesnse for images 
     form validation 
 */
 
