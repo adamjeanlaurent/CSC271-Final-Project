@@ -137,7 +137,7 @@ function shuffleArray() {
 function genRandNum() {
     return Math.floor(Math.random() * 11);
 }
-3
+
 /*
     removes all 'slow' and 'fast' pointers from the array container
 */
