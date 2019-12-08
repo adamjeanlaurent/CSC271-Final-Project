@@ -91,45 +91,27 @@
 	<div class="container-fluid bg-light py-3">
 		<div class="row">
 			<div class="col-md-6 mx-auto">
-<<<<<<< HEAD
-				<form action="mailto:someone@example.com" method="post">
+
+				<form action="mailto:someone@example.com" method="post" id="contact" name="contact"
+					onsubmit="return validateForm();">
 					<div class="card card-body bg-warning">
 						<h3 class="text-center mb-4" tabindex="0">What Sorting Algorithms Do You Want To See Next?!</h3>
 						<div class="form-group has-error">
-							<input class="form-control input-lg" placeholder="E-mail Address" name="email" type="text">
+							<input class="form-control input-lg" id="email" placeholder="E-mail Address" name="email"
+								type="text">
 						</div>
 
 						<div class="form-group">
-							<input class="form-control input-lg" placeholder="Sorting Algorithms" name="sortingAlgos"
-								value="" type="text">
+							<input class="form-control input-lg" id="sortAlgo" placeholder="Sorting Algorithms"
+								name="sortingAlgos" value="" type="text">
 						</div>
 						<div class="checkbox">
 							<label class="small">
 								<input name="terms" type="checkbox">Sign up for our <a href="#"
 									class="text-success">newsletter</a>
 							</label>
-						</div>
-						<input class="btn btn-lg btn-success btn-block" value="Send" type="submit">
-						</fieldset>
-=======
-				<form action="mailto:someone@example.com" method="post" id="contact" name="contact" onsubmit="return validateForm();">
-				<div class="card card-body bg-warning">
-					<h3 class="text-center mb-4" tabindex="0">What Sorting Algorithms Do You Want To See Next?!</h3>
-					<div class="form-group has-error">
-						<input class="form-control input-lg" id="email" placeholder="E-mail Address" name="email" type="text">
-					</div>
 
-					<div class="form-group">
-						<input class="form-control input-lg" id="sortAlgo" placeholder="Sorting Algorithms" name="sortingAlgos" value=""
-							type="text">
-					</div>
-					<div class="checkbox">
-						<label class="small">
-							<input name="terms" type="checkbox">Sign up for our <a href="#"
-								class="text-success">newsletter</a>
-						</label>
->>>>>>> 6441c2e384ff69d5bb6e603226d62f3ba4156e0a
-					</div>
+						</div>
 				</form>
 			</div>
 		</div>
@@ -145,12 +127,10 @@
 	</footer>
 
 	<script src="bootstrapAndJQuery/jquery.min.js"></script>
-<<<<<<< HEAD
+
 	<script src="bootstrapAndJQuery/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-=======
-    <script src="bootstrapAndJQuery/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-        <script src="indexFormValidation.js"></script>
->>>>>>> 6441c2e384ff69d5bb6e603226d62f3ba4156e0a
+	<script src="indexFormValidation.js"></script>
+
 	<!-- Footer -->
 </body>
 
