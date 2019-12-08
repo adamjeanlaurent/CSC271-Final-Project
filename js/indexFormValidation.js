@@ -19,13 +19,19 @@
 function validateForm() {
     var email = document.forms["contact"]["email"].value; 
     var sortAlgo = document.forms["contact"]["sortingAlgos"].value;    
-    if (email === "") {
-    alert("The field marked in red cannot be blank");
+    
+    if (email === "" && sortAlgo === "") {
+    alert("Email address and sorting algorithm cannot be blank.");
     return false; 
     }
-  
+    
     if (sortAlgo === "") {
-    alert("The field marked in red cannot be blank");
+    alert("Sorting Algorithm cannot be blank");
+    return false;
+    }
+  
+    if (email === " ") {
+    alert("Email cannot be blank");
     return false;
     }
 }
