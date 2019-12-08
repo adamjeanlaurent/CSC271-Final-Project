@@ -25,12 +25,12 @@ function validateForm() {
     return false; 
     }
     
-    if (sortAlgo === "" && email !== " ") {
+    if (sortAlgo === "" && email !== "") {
     alert("Sorting Algorithm cannot be blank");
     return false;
     }
   
-    if (email === " " && sortAlgo !== " ") {
+    if (email === "" && sortAlgo !== "") {
     alert("Email cannot be blank");
     return false;
     }
