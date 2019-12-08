@@ -39,8 +39,16 @@ function validateForm() {
     }
   
     // validation fails if the input doesn't match our regular expression
-    if(!re.test(sortAlgo)) {
-      alert("Error: Input for sorting algorithm contains invalid characters!");
+    // and if the email address is not blank
+    if(!re.test(sortAlgo) && email !== "") {
+      alert("Error: Input for Sorting algorithm contains invalid characters!");
+      return false;
+    }
+  
+    // validation fails if the input doesn't match our regular expression
+   // and if the email address is blank
+   if(!re.test(sortAlgo) && email === "") {
+      alert("Email address cannot be blank. Sorting algorithm contains invalid characters!");
       return false;
     }
 }
