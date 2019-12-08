@@ -17,3 +17,18 @@
 body {
   font-family: 'Baloo Bhai', 'Times New Roman', Times, serif;
 }
+
+
+.centerText {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.bottomMargin {
+  margin-bottom: 3%;
+}
+
+.yellowText {
+  color: #ffc107;
+}
