@@ -17,8 +17,8 @@ function ValidateEmail(inputText)
 
 // This ensures that both boxes on the form are filled out
 function validateForm() {
-    var email = document.getElementById('email'); 
-    var sortAlgo = document.getElementById('sortAlgo');    
+    var email = document.forms["contact"]["txtName"] 
+    var sortAlgo = document.forms["contact"]["txtName"];    
     if (email.value === "") {
     alert("The field marked in red cannot be blank");
     return false; 
