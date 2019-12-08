@@ -23,11 +23,6 @@ let speed = document.querySelector('#speed');
 let choiceOfSpeed = 1;
 
 /*
-    TODO 
-    form validation 
-*/
-
-/*
     This function animates the bubble sort algorithm
 */
 function animatedBubbleSort(inputArr) {
