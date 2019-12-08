@@ -47,14 +47,14 @@
       <div>
           <h2 tabindex="0"> Introduction </h2>
           <p tabindex="0" class = "bottomMargin"> Despite bubble sort being one of the slowest sorting algorithms, it is one of the easiest to implement from scratch. 
-              It can be implemented in several programming languages. In many program languages, bubble sort can be either implemented iteratively(loops) 
+              It can be implemented in several programming languages. In many programming languages, bubble sort can be either implemented iteratively(loops) 
               or recursively. For now, all the implementations of bubble sort we will show you will be implemented iteratively. However, you are more than welcome to search for 
               recursive solutions in other places. Again, the following implementations will not use the most optimal solution.</p>
         </span>
       </div>
        <!-- This is a provides a list of programming langauges which will user to click on a link in the list -->
       <div>
-        <h2 tabindex="0"> Programming Langauges </h2>
+        <h2 tabindex="0"> Programming Languages </h2>
         <!-- Each link clicked will jump to the code implementation shown on the same page -->
         <ul>
           <li><p><a href=#Python>Python</a></p></li>
@@ -109,6 +109,7 @@
       <script src="bootstrapAndJQuery/jquery.min.js"></script>
       <script src="bootstrapAndJQuery/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
       <script>
+          // These couple of lines make all the lines of code in the gists tabbable too
         let linesOfCode = document.querySelectorAll('.js-file-line');
         for(let lineOfCode of linesOfCode) {
           lineOfCode.setAttribute('tabindex','0');
