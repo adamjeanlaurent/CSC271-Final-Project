@@ -24,18 +24,18 @@ function validateForm() {
     var re = /^[\w ]+$/;
     
     if (email === "" && sortAlgo === "") {
-    alert("Email address and sorting algorithm cannot be blank.");
-    return false; 
+      alert("Email address and sorting algorithm cannot be blank.");
+      return false; 
     }
     
     if (sortAlgo === "" && email !== "") {
-    alert("Sorting Algorithm cannot be blank");
-    return false;
+      alert("Sorting Algorithm cannot be blank");
+      return false;
     }
   
     if (email === "" && sortAlgo !== "") {
-    alert("Email cannot be blank");
-    return false;
+      alert("Email cannot be blank");
+      return false;
     }
   
     // validation fails if the input doesn't match our regular expression
