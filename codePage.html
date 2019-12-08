@@ -43,18 +43,18 @@
     <div>
 
     <div class="container">
-      <h1><strong>Code Implementation of Bubble Sort</strong></h1>
+      <h1 tabindex="0" class = "centerText"><strong>Code Implementation of <span class = "yellowText">Bubble Sort</span></strong></h1>
       <div>
-          <h2> Introduction </h2>
-          <p> Despite bubble sort being one of the slowest sorting algorithms, it is one of the easiest to implement from scratch. 
+          <h2 tabindex="0"> Introduction </h2>
+          <p tabindex="0" class = "bottomMargin"> Despite bubble sort being one of the slowest sorting algorithms, it is one of the easiest to implement from scratch. 
               It can be implemented in several programming languages. In many program languages, bubble sort can be either implemented iteratively(loops) 
-              or recursively. For now, the implementation of bubble sort will be implemented iteratively. However, you are more than welcome to search for 
+              or recursively. For now, all the implementations of bubble sort we will show you will be implemented iteratively. However, you are more than welcome to search for 
               recursive solutions in other places. Again, the following implementations will not use the most optimal solution.</p>
         </span>
       </div>
        <!-- This is a provides a list of programming langauges which will user to click on a link in the list -->
       <div>
-        <h2> Programming Langauges </h2>
+        <h2 tabindex="0"> Programming Langauges </h2>
         <!-- Each link clicked will jump to the code implementation shown on the same page -->
         <ul>
           <li><p><a href=#Python>Python</a></p></li>
@@ -69,31 +69,31 @@
         
       <!-- The following javascript tags embeds the bubble sort code for each programming language -->
       <div>
-        <h2><a name="Python"> Python</a> </h2>
+        <h2 tabindex="0"><a name="Python"> Python</a> </h2>
         <script src="https://gist.github.com/mjackson-1/b21d8637f50475a58a0b7053dc1f5bf8.js"></script>
       </div>
       <div>
-        <h2><a name="Java"> Java </a></h2>
+        <h2 tabindex="0"><a name="Java"> Java </a></h2>
          <script src="https://gist.github.com/mjackson-1/4edbfbe34d51e516019842113107740f.js"></script>
       </div>
       <div>
-        <h2><a name="C"> C</a></h2>
+        <h2 tabindex="0"><a name="C"> C</a></h2>
         <script src="https://gist.github.com/mjackson-1/7a9ff2aae9bc29db40474f3c763e751c.js"></script>   
       </div>    
       <div>
-        <h2><a name="C++"> C++</a></h2>
+        <h2 tabindex="0"><a name="C++"> C++</a></h2>
          <script src="https://gist.github.com/mjackson-1/7a9ff2aae9bc29db40474f3c763e751c.js"></script>
       </div>
       <div>
-        <h2><a name="Csharp"> C#</a></h2>
+        <h2 tabindex="0"><a name="Csharp"> C#</a></h2>
          <script src="https://gist.github.com/mjackson-1/efcb553dbad9ffb0c9377cbdf2afe45b.js"></script>
       </div>
       <div>
-        <h2><a name="Lua"> Lua</a></h2>
+        <h2 tabindex="0"><a name="Lua"> Lua</a></h2>
          <script src="https://gist.github.com/hoffoo/b420d1ecc60ad6ec44e5.js"></script>
       </div>
       <div>
-        <h2><a name="JavaScript"> JavaScript</a></h2>
+        <h2 tabindex="0"><a name="JavaScript"> JavaScript</a></h2>
         <script src="https://gist.github.com/mjackson-1/e02b803cb1ba49526b75d7347346c1ee.js"></script>
       </div>
     </div>
@@ -108,5 +108,11 @@
       <!-- Footer -->
       <script src="bootstrapAndJQuery/jquery.min.js"></script>
       <script src="bootstrapAndJQuery/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+      <script>
+        let linesOfCode = document.querySelectorAll('.js-file-line');
+        for(let lineOfCode of linesOfCode) {
+          lineOfCode.setAttribute('tabindex','0');
+        }
+      </script>
 </body>
 </html>
