@@ -1,5 +1,5 @@
 // Validiates email address taking text as it input
-function ValidateEmail(inputText)
+/*function ValidateEmail(inputText)
 {
   var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   if(inputText.value.match(mailformat))
@@ -13,18 +13,18 @@ function ValidateEmail(inputText)
   document.form1.text1.focus();
   return false;
   }
-}
+}*/
 
 // This ensures that both boxes on the form are filled out
 function validateForm() {
-    var email = document.forms["contact"]["txtName"] 
-    var sortAlgo = document.forms["contact"]["txtName"];    
-    if (email.value === "") {
+    var email = document.forms["contact"]["email"].value; 
+    var sortAlgo = document.forms["contact"]["sortingAlgos"].value;    
+    if (email === "") {
     alert("The field marked in red cannot be blank");
     return false; 
     }
   
-    if (sortAlgo.value === "") {
+    if (sortAlgo === "") {
     alert("The field marked in red cannot be blank");
     return false;
     }
